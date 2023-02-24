@@ -5,7 +5,6 @@ from services.inputer import input_contact, input_num
 def change(lst, contact_num, contact_data):
     contact_data.insert(0, contact_num)
     lst[contact_num - 1] = contact_data
-    print(lst)
     rewrite_csv(lst)
 
 
